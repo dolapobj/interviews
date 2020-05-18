@@ -1,0 +1,27 @@
+This is a place for me to write down useful vim commands.
+
+NON-VIM COMMANDS
+cmd i -> run script
+ctrl i -> stop script
+
+BASICS
+dd --> delete line
+num + dd --> deletes line on and num-1 following lines
+u --> undo
+ctrl r -> redo
+
+
+SEARCH
+
+/s --> searches for first occurence of s
+    n --> next occurence of s
+    N --> previous occurence of s
+
+
+SEARCH AND REPLACE
+
+:%s/wantToReplace/replaceWithThis -->  replace first occurence of wantToReplace with replaceWithThis
+    /g --> greedy, replace all wantToReplace with replaceWithThis
+       --> /c asks for confirmation
+
+       

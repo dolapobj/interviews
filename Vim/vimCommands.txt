@@ -6,7 +6,7 @@ ctrl i -> stop script
 
 BASICS
 dd --> delete line
-  p --> put deleted line
+    p --> put deleted line
 num + dd --> deletes line on and num-1 following lines
 u --> undo
 ctrl r -> redo

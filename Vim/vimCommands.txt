@@ -6,11 +6,15 @@ ctrl i -> stop script
 
 BASICS
 dd --> delete line
+  p --> put deleted line
 num + dd --> deletes line on and num-1 following lines
 u --> undo
 ctrl r -> redo
-
-
+x --> delete char
+a --> append
+d$ --> delete to the end of a line
+dw --> delete until next word
+de --> delete until end of word
 SEARCH
 
 /s --> searches for first occurence of s
@@ -24,4 +28,11 @@ SEARCH AND REPLACE
     /g --> greedy, replace all wantToReplace with replaceWithThis
        --> /c asks for confirmation
 
-       
+
+SURROUND
+
+y-s --> surround
+
+PRACTICE
+
+This is a word I am typing to later delete.

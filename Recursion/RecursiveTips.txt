@@ -1,0 +1,15 @@
+This is a simple document to help me break down how to solve Recursive problems.
+
+*Taken from Daniel Oliver King: https://medium.com/@daniel.oliver.king/getting-started-with-recursion-f89f57c5b60e
+
+1. Break the problem I am trying to solve down into a problem that is one step simpler
+2. Assume that my function will work to solve the simpler problem — really believe it beyond any doubt
+3. Ask myself: Since I know I can solve the simpler problem, how would I solve the more complex problem?
+
+**BOLD LETTERS**
+One common mistake that I see people make when trying to develop a recursive algorithm to solve a problem
+is that they try to think about how to break the problem down all the way to the base case. I would like to
+emphasize that in order to develop the function above, I did not think about how I could break the
+problem down all the way to the base case. That is the function’s job, not yours.
+Instead, I only thought about the problem that is one step simpler than the problem I am really trying to solve,
+and then I wrote my recursive algorithm to build up from there to solve the real problem.

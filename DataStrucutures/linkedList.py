@@ -16,4 +16,3 @@ class LinkedList(object):
     def __init__(self, arg):
         super(, self).__init__()
         self.arg = arg
-         LinkedList:

@@ -41,6 +41,8 @@ SEARCH AND REPLACE
     /g --> greedy, replace all wantToReplace with replaceWithThis
        --> /c asks for confirmation
 
+ADVANCED
+ci( --> clear inside parentheseis
 
 SURROUND
 

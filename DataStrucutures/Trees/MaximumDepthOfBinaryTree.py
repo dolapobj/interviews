@@ -24,4 +24,4 @@ def maxDepth(root):
 
 #RT analysis: O(n) --> we traverse through all nodes in the tree once in the worst case.
 #SC analysis: O(log(n)) --> in the longest path, we store the left and right children to come back to
-#                           because we backtrack when we finish traversing the left side. 
+#                           because we backtrack when we finish traversing the left side.

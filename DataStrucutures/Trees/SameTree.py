@@ -45,4 +45,5 @@ def isSameTree(p,q):
 
 
 #RT O(n) --> Traverse through each tree once
-#SC O(log(n)) --> we need to store the children for each node, so on the longest path, we store 2*log(n) nodes --> O(log(n))
+#SC O(n) --> we need to store the children for each node, so on the longest path, we store O(h) nodes, or O(n) nodes.
+#            not guaranteed a height of log(n) because it is not a BST.

@@ -42,8 +42,9 @@ SEARCH AND REPLACE
        --> /c asks for confirmation
 
 ADVANCED
-ci( --> clear inside parentheseis
-
+ci( --> change inside parentheseis
+ciw --> change inside word
+vip --> select inside paragraph
 SHELL COMMANDS
 : --> set cursor at bottom of screen
     ! --> allows you to execute any shell command (i.e ls to see directory)

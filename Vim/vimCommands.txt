@@ -44,6 +44,14 @@ SEARCH AND REPLACE
 ADVANCED
 ci( --> clear inside parentheseis
 
+SHELL COMMANDS
+: --> set cursor at bottom of screen
+    ! --> allows you to execute any shell command (i.e ls to see directory)
+        dir/ls --> see current directory
+    r fileName --> retrieves and merges fileName into current File
+v --> select range of lines
+    :w fileName --> saves selected lines to new file called fileName
+
 SURROUND
 
 y-s --> surround

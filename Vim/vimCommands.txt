@@ -25,6 +25,10 @@ c [num] [motion] --> change next [num] words until motion.
 ctrl + g --> show location in file
     G --> move to top of file
     gg --> move to bottom of file
+A --> append to the end of a line
+R --> Replace mode, replace as many chars as you want
+y --> yank (copy)
+    w --> yank a word (y can be used as an operator)
 
 SEARCH
 /s --> searches for first occurence of s
@@ -40,6 +44,12 @@ SEARCH AND REPLACE
 :%s/wantToReplace/replaceWithThis -->  replace first occurence of wantToReplace with replaceWithThis
     /g --> greedy, replace all wantToReplace with replaceWithThis
        --> /c asks for confirmation
+
+SEARCH COMMANDS/FILTERS
+:set ic --> ignore case
+:set is --> incremental search
+:set hls --> highlight search
+search
 
 ADVANCED
 ci( --> change inside parentheseis

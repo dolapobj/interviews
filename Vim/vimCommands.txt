@@ -62,6 +62,9 @@ SHELL COMMANDS
     r fileName --> retrieves and merges fileName into current File
 v --> select range of lines
     :w fileName --> saves selected lines to new file called fileName
+lineNumber + G --> jump to lineNumber
+VG --> select from current line to end of file 
+
 
 SURROUND
 

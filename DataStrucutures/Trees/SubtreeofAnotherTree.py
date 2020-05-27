@@ -21,16 +21,16 @@ Return true
 """
 
 #check if current tree is same, else check left subtree and right subtree
-def issubtree(s,t):
+def isSubtree(s,t):
     if s == None and t!=None:
-        return false
-    def issametree(a,b):
-        if a == none and b!= none or a!= none and b==none:
-            return false
-        if a == none and b == none:
-            return true
+        return False
+    def isSametree(a,b):
+        if a == None and b!= None or a!= None and b==None:
+            return False
+        if a == None and b == None:
+            return True
         if a.val != b.val:
-            return false
+            return False
 
         return isSameTree(a.left,b.left) and isSameTree(a.right,b.right)
     if isSameTree(s,t):

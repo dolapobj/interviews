@@ -19,9 +19,18 @@
        15   7
 
  """
+   #pre-order: visit,left,right
+        #in-order:left,visit,right
+        #post-order: left,right,visit
+        def buildTree2(preorder,inorder):
+            if not inorder:
+                return None
+            rootIndex = inorder.index(preorder.pop(0))
+            root  = TreeNode(inorder[rootIndex])
+            root.left = buildTree2(preorder, inorder[:rootIndex])
+            root.right = buildTree2(preorder, inorder[rootIndex+1:])
+            return root
+        return buildTree2(preorder,inorder)
 
- #pre-order: visit,left,right
- #in-order:left,visit,right
- #post-order: left,right,visit
- def buildTree(preorder,inorder):
-     #couldnt get on first try, come back to
+#RT --> O(n) visit all nodes in tree
+#SC: O(n) --> store left and right child of each node on recursive stack

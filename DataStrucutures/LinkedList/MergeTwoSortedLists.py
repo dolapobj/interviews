@@ -35,5 +35,5 @@ def mergeTwoLists(l1,l2):
     mergedList = mergedList.next
     return mergedList
 
-#RT: O(n+m) where n and m are lengths of l1 and l2 --> we recuse on all nodes in both Lists
-#SC: O(n+m) --> we maintain a new list and do not modify l1 and l2. 
+#RT: O(n+m) where n and m are lengths of l1 and l2 --> we recurse on all nodes in both Lists
+#SC: O(n+m) --> we maintain a new list and do not modify l1 and l2.

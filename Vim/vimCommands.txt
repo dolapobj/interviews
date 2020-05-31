@@ -29,6 +29,7 @@ A --> append to the end of a line
 R --> Replace mode, replace as many chars as you want
 y --> yank (copy)
     w --> yank a word (y can be used as an operator)
+cc --> change entire line
 
 SEARCH
 /s --> searches for first occurence of s
@@ -63,8 +64,7 @@ SHELL COMMANDS
 v --> select range of lines
     :w fileName --> saves selected lines to new file called fileName
 lineNumber + G --> jump to lineNumber
-VG --> select from current line to end of file 
-
+VG --> select from current line to end of file
 
 SURROUND
 

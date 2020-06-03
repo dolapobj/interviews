@@ -55,3 +55,5 @@ def merge(head):
 def reorderList:
     if head:
         merge(head)
+#RT O(n) --> we traverse all nodes
+#SC O(n) --> when we reverse the list we store to the stack n times

@@ -49,7 +49,7 @@ def printSpiral(matrix):
     while (top <= bottom and left <= right):
         #traverse right
         if dir == 0:
-            for i in xrange(left,right +1):
+            for i in range(left,right +1):
                 out.append(matrix[top][i])
                 #once we print all elements in row, top should increment by 1!
             top +=1
@@ -57,25 +57,25 @@ def printSpiral(matrix):
 
         #traverse down
         elif dir == 1:
-            for i in xrange(top,bottom +1):
+            for i in range(top,bottom +1):
                 out.append(matrix[i][right])
             right -=1
             dir = 2
 
         #traverse left
         elif dir == 2:
-            for i in xrange(right,left -1,-1):
+            for i in range(right,left -1,-1):
                 out.append(matrix[bottom][i])
             bottom -=1
             dir =  3
 
         #traverse up!
         elif dir == 3:
-            for i in xrange(bottom,top -1,-1):
+            for i in range(bottom,top -1,-1):
                 out.append(matrix[i][left])
             left +=1
             dir = 0
     return out
 
 #RT : O(n) --> traverse entire array
-#SC : O(n) --> mantain a list of elements in matrix 
+#SC : O(n) --> mantain a list of elements in matrix

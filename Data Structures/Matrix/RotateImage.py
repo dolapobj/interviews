@@ -30,13 +30,13 @@ rotate the input matrix in-place such that it becomes:
 """
 
 #go layer by layer and swap elements, elementwise
-#n/2 -1 layers
+#int(n/2) -1 layers
 #note, [~i] == [n-1-i] --> bitwise not
 #note swaps are done in parallel, not sequentially!
 def rotate90(A):
     n = len(A)
-    for i in range(n/2):
-        for j in range(n-n/2):
+    for i in range(int(n/2)):
+        for j in range(n-int(n/2)):
              A[i][j], A[~j][i], A[~i][~j], A[j][~i] =  A[~j][i], A[~i][~j], A[j][~i], A[i][j]
 
 

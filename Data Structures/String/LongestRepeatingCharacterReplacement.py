@@ -59,3 +59,5 @@ def long(s,k):
         end+=1
 
     return maxLength
+#RT: O(N) --> sliding window, linear traversal through input
+#SC: O(N) --> maintain a dictionary of all chars in current window. 

@@ -29,4 +29,6 @@ def validAnagram(s,t):
 
 
 #RT: O(n) --> Iterate through s once.
-#SC: O(n) --> store frequency of each char in each string     
+#SC: O(n) --> store frequency of each char in each string
+
+#Note --> can also sort! 

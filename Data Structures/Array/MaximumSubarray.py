@@ -15,17 +15,15 @@ If you have figured out the O(n) solution,
 try coding another solution using the divide and conquer approach, which is more subtle.
 """
 
+#idea --> two options at each step
+#         1. add nums[i] to current sum bc nums[i]
+#         2. nums[i] is our new start for largest sum subarray
 def maximumSubArray(nums):
-    j = 0
-    currentMax = float('-inf')
-    currentSum = 0
-    while j < len(nums):
-        currentSum += nums[j]
-        if nums[j] > currentSum:
-            currentSum = nums[j]
-        if currentSum  > currentMax:
-            currentMax = currentSum
-        j+=1
+    currenttMax,currentSum = nums[0],nums[0]
+    for i in range(1,len(nums)):
+        currentSum += nums[i]
+        currentSum = max(currentSum,nums[i])
+        currentMax = max(currentSum,currentMax)
     return currentMax
 
 #RT --> O(n)

@@ -27,6 +27,11 @@ The given node will always be the first node with val = 1.
 You must return the copy of the given node as a reference to the cloned graph.
 """
 
+class Node:
+    def __init__(self, val = 0, neighbors = None):
+        self.val = val
+        self.neighbors = neighbors if neighbors is not None else []
+
 def cloneGraph(node):
     visited = {}
     def dfs(node):
@@ -41,7 +46,6 @@ def cloneGraph(node):
                 nodeCopy.neighbors.append(dfs(neighbor))
         return nodeCopy
     return dfs(node)
-
 
 #RT : O(n) --> Visit every node
 #SC : O(n) --> store each node and neighbors.
